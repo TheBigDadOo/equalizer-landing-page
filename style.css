@@ -19,10 +19,9 @@
 body{
     background-color: var(--white);
     background-image: url(assets/bg-main-mobile.png);
-    background-position-y: -104px;
-    background-position-x: 159px;
-    background-size: 281.4px 480px;
     background-repeat: no-repeat;
+    background-position: 159px -104px;
+    background-size: 281.4px 480px;
 }
 
 .logo{
@@ -32,6 +31,10 @@ body{
     position: relative;
     left: 24px;
     top: 40px;     
+}
+
+.backgroundPattern1{
+display: none;
 }
 
 .description{
@@ -64,6 +67,7 @@ body{
 }
 
 .product .illustrationApp{
+    overflow: hidden;
     width: 209px;
     height: 430px;
     position: absolute;
@@ -73,7 +77,7 @@ body{
     z-index: 10;
 }
 
-.product .backgroundPattern{
+.product .backgroundPattern2{
     position: relative;
     background-color: var(--black);
     width: 375px;
@@ -82,7 +86,8 @@ body{
     border-radius: 12px;
 }
 
-.product .backgroundPattern img{
+
+.product .backgroundPattern2 img{
     height: 420px;
     width: auto;
     position: absolute;
@@ -225,4 +230,210 @@ body{
 .socialMedias a{
     text-decoration: none;
     margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+    body{
+        background-image: url(assets/bg-main-tablet.png);
+        background-position-y: -111px;
+        background-position-x: -254px;
+        background-size: 808px 983px;
+        background-repeat: no-repeat;
+    }
+
+    .logo{
+        position: relative;
+        left: 39px;
+        top: 62px;     
+    }
+
+    .backgroundPattern1{
+        display: block;
+        position: absolute;
+        right: -35px;
+        top: -32px; 
+        }
+
+    .description{
+        margin: 189px auto 0 39px;
+        height: 320px;
+        width: 327px;
+    }
+
+    .product{
+        width: 696px;
+        height: 834px;
+        margin-top: 111px;
+    }
+
+    .product .backgroundPattern2{
+        position: relative;
+        background-color: var(--black);
+        width: 100%;
+    }
+
+    .product .backgroundPattern2 img{
+        height: 420px;
+        width: auto;
+        position: absolute;
+        top: -31px;
+        left: 229px;
+        transform: none;
+        z-index: 0;
+    }
+
+    .product .illustrationApp{
+        left: 64px;
+        transform: none;
+        width: 270px;
+        height: 556px;
+        z-index: 5;
+    }
+
+    .card{
+        position: absolute;
+        top: 288px;
+        left: 239px;
+        width: 399px;
+        z-index: 10;
+        display: flex;
+    }
+    
+    .footer{
+        width: 696px;
+        height: 143px;
+        margin: 87px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contact{
+        width: 366px;
+        height: 79px;
+        margin: 0;
+    }
+    
+    .contact .logo{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 32px;
+    }
+    
+    .socialMedias{
+        
+        align-self: flex-end;
+        margin-bottom: 29px;
+        margin: 0 0 29px 0;
+    }
+}
+
+@media (min-width: 1320px) {
+    body{
+        background-image: url(assets/bg-main-desktop.png);
+        background-position-y: -112px;
+        background-position-x: -146px;
+        background-size: 1613px 1758px;
+        background-repeat: no-repeat;
+    }
+
+    .logo{
+        position: relative;
+        left: 166px;
+        top: 62px;     
+    }
+
+    .backgroundPattern1{
+        display: block;
+        position: absolute;
+        right: -35px;
+        top: -32px; 
+        }
+
+    .description{
+        margin: 221px auto 0 166px;
+        height: 316px;
+        width: 1015px;
+    }
+
+    .description h1{
+        font-weight: 700;
+        font-size: 88px;
+        line-height: 88px;
+        letter-spacing: -1px;    
+    }
+    
+    .description p{
+        width: 825px;
+        height: 102px;
+        margin-top: 40px;
+        line-height: 34px;
+        font-size: 20px;
+        
+    }
+
+    .product{
+        width: 1110px;
+        height: 813px;
+        margin-top: 108px;
+    }
+
+    .product .backgroundPattern2{
+        top: 213px;
+        width: 100%;
+    }
+
+    .product .backgroundPattern2 img{
+        height: 468px;
+        width: auto;
+        position: absolute;
+        top: -40px;
+        left: 336px;
+        transform: none;
+        z-index: 0;
+    }
+
+    .product .illustrationApp{
+        left: 102px;
+        transform: none;
+        width: 312px;
+        height: 642px;
+        z-index: 5;
+    }
+
+    .card{
+        position: absolute;
+        top: 303px;
+        left: 569px;
+        width: 399px;
+        z-index: 10;
+        display: flex;
+    }
+    
+    .footer{
+        width: 1110px;
+        height: 79px;
+        margin: 87px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contact{
+        width: 651px;
+        height: 79px;
+        margin: 0;
+        display: flex;
+    }
+    .contact .logo{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-right: 138px;
+    }
+    .socialMedias{
+        
+        align-self: flex-end;
+        margin-bottom: 29px;
+        margin: 0 0 29px 0;
+    }
 }
