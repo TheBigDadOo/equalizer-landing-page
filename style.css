@@ -193,10 +193,18 @@ display: none;
     
 }
 
+.apple:hover{
+    background-color: var(--blue);
+}
+
 .android{
     color: var(--black);
     background-color: var(--white);
 
+}
+
+.android:hover{
+    background-color: var(--yellow);
 }
 
 .contact{
@@ -435,5 +443,9 @@ display: none;
         align-self: flex-end;
         margin-bottom: 29px;
         margin: 0 0 29px 0;
+    }
+
+    .socialMedias a img:hover{
+        fill: var(--orange);
     }
 }
